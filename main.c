@@ -31,7 +31,7 @@ void pomenyatt (int*a, int*b)
 
 int** treug(int** a, int* b, int n)
 {
-    for(int j=0; j<n-1; j++)
+    for(int j=0; j<n; j++)
     {
         int i=j;
         while(a[i][j]==0)
@@ -93,7 +93,7 @@ int main()
     for (j=0; j<n; j++)
         for (i=0; i<n; i++)
         {
-              scanf("%d", &a[i][j]); //a[j][i]=1+rand()%10;
+              scanf("%d", &a[j][i]); //a[j][i]=1+rand()%10;
         }
     printf("matritsa sistemy:\n");
     for (j=0; j<n; j++)
